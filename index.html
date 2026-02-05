@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated particles background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Floating hearts -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Main card -->
+    <div class="card">
+        <!-- Decorative elements -->
+        <div class="decorative-hearts">
+            <span class="deco-heart">💕</span>
+            <span class="deco-heart">💖</span>
+            <span class="deco-heart">💝</span>
+            <span class="deco-heart">💗</span>
+        </div>
+        
+        <!-- Envelope animation on load -->
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+                <div class="letter">
+                    <div class="letter-heart">💌</div>
+                </div>
+            </div>
+            <p class="envelope-text">Click to open...</p>
+        </div>
+        
+        <!-- Main content (hidden initially) -->
+        <div class="content" id="mainContent">
+            <div class="title-wrapper">
+                <h1 class="title">
+                    <span class="title-line">Will You Be</span>
+                    <span class="title-main">My Valentine?</span>
+                </h1>
+                <div class="title-hearts">
+                    <span>💕</span>
+                    <span>💖</span>
+                    <span>💕</span>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <div class="heart-pulse">
+                    <svg viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="message">
+                <p class="message-line">Ever since I met you,</p>
+                <p class="message-line">my days have been brighter,</p>
+                <p class="message-line">my smiles have been wider,</p>
+                <p class="message-line">and my heart has been fuller.</p>
+                <p class="message-highlight">Would you make this Valentine's Day special with me?</p>
+            </div>
+
+            <div class="button-container">
+                <button id="yesBtn" class="yes-btn">
+                    <span class="btn-text">Yes! 💖</span>
+                    <span class="btn-sparkle">✨</span>
+                </button>
+                <button id="noBtn" class="no-btn">
+                    <span>No</span>
+                </button>
+            </div>
+            
+            <p class="hint" id="hint"></p>
+
+            <div id="response" class="response hidden"></div>
+        </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
